@@ -9,7 +9,7 @@ const card_style ={
     backgroundColor: lang === 'rus' ? 'darkblue' : 'white'
 }
 
-const delee_card = (event) => {
+const delete_card = (event) => {
   event.stopPropagation()
   deleteCard(id)
 }
@@ -21,7 +21,7 @@ const delee_card = (event) => {
     style={card_style}
     onClick={() => changeLang(id)}
     >
-      <IoMdClose  onClick={delee_card}/>
+      <IoMdClose  onClick={delete_card}/>
         <p>{ card_text }</p>
     </div>
   )
