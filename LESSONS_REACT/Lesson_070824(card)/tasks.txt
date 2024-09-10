@@ -1,0 +1,27 @@
+1. Создать CardsContainer  и CardItem
+2. CardsContainer -> App
+3. В App создать состояние  cards(+useState), используя useState
+4. Состояние  cards докинуть до CardsContainer через пропсы
+5. В CardsContainer из состояния cards отрисовать английские слова (cardItem)
+6. Отображать слово на языке, указанном в lang
+7. Сделать из CardsContainer грид - 4 колонки + gap
+8. Стилизовать CardItem - border, center content, font-size, font-weight. От языка зависит - цвет текста и цвет заднего фона.
+9. Добавить к каждой карточке крестик в правый верхний угол, используя библиотеку react-icons
+10. В App написать функцию deleteCard 
+11. При клике на Х вызывать функцию deleteCard
+12. Создать TriggersBtns с двумя кнопками (div)
+13. Стилизовать под кнопки.
+14. Создать функцию changeToRus и вызывать ее пр клике на RUS
+15. Создать функцию changeToEng и вызывать ее пр клике на Eng
+16. Создать новый компонент AddCardForm (2 инпута + кнопка)
+17. AddCardForm -> App
+18. При сабмите формы формировать объект и выводить его в консоль
+Пример объекта:
+{
+    id: unique,
+    title_rus: input1.value,
+    title_eng: input2.value,
+    lang: 'eng'
+}
+19. Стилизовать форму
+20. Создать функцию addNewCard, которая принимает новую карточку и добавляет ее в состояние. Вызвать функцию при сабмите AddCardForm и передать в нее объект с данными новой карточки

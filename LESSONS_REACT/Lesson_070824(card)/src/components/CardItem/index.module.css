@@ -1,0 +1,20 @@
+.card {
+  border: 3px solid gray;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.card > svg {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}

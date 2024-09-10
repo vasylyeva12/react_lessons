@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #f4edea;
+}
+
+.todo-app {
+  min-height: 80vh;
+  background-color: #b4e5d3;
+  border: 4px solid #12263a;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px #f4edea;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  // top: 0;
+  // right:  0;
+  // bottom: 0 ;
+  // left: 0;
+  // margin: auto;
+
+  &__left {
+    padding: 20px;
+    border-right: 4px solid #12263a;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .btn {
+      align-self: center;
+    }
+  }
+
+  &-control {
+    border-color: #12263a;
+    border-radius: 32px;
+    padding: 10px 20px;
+  }
+
+  &-label {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 16px;
+  }
+}
+
+.btn {
+  background-color: #06bcc1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: .3s ease-in-out 0s;
+
+  &:hover {
+    background-color: #fff;
+    color: #12263a;
+    transition: .3s ease-in-out 0s;
+  }
+}
+
+.search {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.notes{
+  &__title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  &__content {
+    background-color: #fff;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    max-height: 600px;
+    overflow-y: auto;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      background-color: #f4edea;
+      border: 2px solid #12263a;
+      border-radius: 14px;
+
+      &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px;
+        border-bottom: 2px solid #12263a;
+      }
+
+      &__tags{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+       .tags {
+        list-style: none;
+        display: flex;
+        gap: 4px;
+        
+        &__item {
+          background-color: #d3d3d3;
+          color: red;
+          padding: 4px;
+        }
+       }
+      }
+    }
+  }
+}

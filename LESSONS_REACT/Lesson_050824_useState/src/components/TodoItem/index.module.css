@@ -1,0 +1,14 @@
+.item{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 15px;
+
+    position: relative;
+}
+
+.item > svg {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
